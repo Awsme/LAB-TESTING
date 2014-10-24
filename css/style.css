@@ -1,0 +1,30 @@
+body {
+	background-color: #f7f6ec;
+}
+
+h1 {
+	color: #b39c5a;
+}
+
+#version {
+	font-style: italic;
+	font-size: 15px;
+	text-align: left;
+	margin-top: 5px;
+}
+
+#mainframe	{
+	width: 960px;
+	border: 2px solid black;
+	margin: auto;
+}
+
+#secondframe	{
+	margin: 10px;
+	border: 1px solid #b39c5a;
+}
+
+#photoborder{
+	border: 1px solid #b39c5a;
+	padding: 5px;
+}
