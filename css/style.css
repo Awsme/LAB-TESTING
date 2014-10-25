@@ -54,4 +54,34 @@ header {
 .heading_name {
 	font-size: 44px;
 	color: #b39c5a;
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+
+.nana_photo {
+	display: block;
+	margin: auto;
+	border: 7px solid #fff;
+	outline: 5px solid #b39c5a;
+	width: 33%;
+}
+
+.navigation {
+	width: 236px;
+	position: absolute;
+	top: 127px;
+	right: 45px;
+}
+
+.navigation a{
+	display: block;
+	float: right;
+	padding: 6px;
+	margin-right: 20px;
+	text-decoration: none;
+	color: #252525;
+	text-transform: uppercase;
+	font-size: 15px;
+	background: #f2e9e2;
+	margin-top: 1px;
 }
