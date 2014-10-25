@@ -1,30 +1,57 @@
 body {
 	background-color: #f7f6ec;
+	font-family: 'AcademycC', serif;
+	min-width: 320px;
 }
 
 h1 {
 	color: #b39c5a;
 }
 
-#version {
-	font-style: italic;
+#container {
+	box-sizing: border-box;
+	max-width: 1440px;
+	width: 90%;
+	margin: 38px auto 50px auto;
+	outline: 2px solid black;
+	border: 8px solid #f7f6ec;
+	box-shadow: inset 0px 0px 0px 1px #b39c5a;
+	padding: 15px 50px 30px 50px;
+	position: relative;
+	z-index: 1;
+}
+
+.language {
+	margin-left: 0px;
 	font-size: 15px;
-	text-align: left;
-	margin-top: 5px;
+	color: #4d4d4d;
+	text-decoration: none;
+	border-bottom: solid 1px #b39c5a;
+	font-style: italic;
 }
 
-#mainframe	{
-	width: 960px;
-	border: 2px solid black;
-	margin: auto;
+.email {
+	float: right;
+	margin-right: 0px;
+	font-size: 15px;
+	color: #4d4d4d;
+	text-decoration: none;
+	border-bottom: solid 1px #b39c5a;
+	font-style: italic;
 }
 
-#secondframe	{
-	margin: 10px;
-	border: 1px solid #b39c5a;
+#fixed_topside {
+	width: 100%;
+	position: fixed;
+	height: 40px;
+	top: 0;
 }
 
-#photoborder{
-	border: 1px solid #b39c5a;
-	padding: 5px;
+header {
+	margin-top: 20px;
+}
+
+.heading_name {
+	font-size: 44px;
+	color: #b39c5a;
 }
