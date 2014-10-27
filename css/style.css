@@ -1,6 +1,6 @@
 body {
 	background-color: #f7f6ec;
-	font-family: 'AcademycC', serif;
+	font-family: 'AcademyC', serif;
 	min-width: 320px;
 }
 
@@ -84,4 +84,29 @@ header {
 	font-size: 15px;
 	background: #f2e9e2;
 	margin-top: 1px;
+}
+
+.left_banner {
+	position: absolute;
+	top:150px;
+}
+
+.left_banner_logo {
+	float: left;
+}
+
+.left_banner_date {
+	margin-left: 12px;
+	float: left;
+}
+
+.date_num {
+	padding: 0px;
+	font-size: 40px;
+	display: block;	
+}
+
+.date_month {
+	font-size: 13px;
+	font-family: Arial, sans-serif;
 }
