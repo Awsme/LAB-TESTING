@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Academy";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/academyc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/academyc-webfont.woff") format("woff"), url("../fonts/academyc-webfont.ttf") format("truetype");
+}
+
 body {
 	background-color: #f7f6ec;
 	font-family: 'Academy', serif;
@@ -43,8 +50,7 @@ h3 {
 }
 
 .language:hover{
-    border: 2px solid #d6bb36;
-    box-shadow: 0px 0px 22px 0px rgba(230, 209, 89, 0.91);
+    background: black;
 }
 
 .email {
@@ -58,6 +64,8 @@ h3 {
 }
 
 .email:hover {
+    background: black;
+    color: white;
     cursor: pointer;
 }
 
@@ -88,6 +96,7 @@ header {
 }
 
 .navigation {
+    list-style-type: none;
 	width: 236px;
 	position: absolute;
 	top: 127px;
@@ -187,4 +196,51 @@ header {
 	font-family: Arial, sans-serif;
 	font-size: 12px;
 	line-height: 20px
+}
+
+.architecture_design{
+    margin-top: 100px;
+}
+
+.arc_title {
+    margin-top: 0;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    background: url(/img/architect_lines.png);
+    text-transform: uppercase;
+}
+
+.arc_title_description {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.gallery {
+    width: 1020px;
+    heighT: 260px;
+    margin: 0 auto;
+}
+
+.apa_block {
+    margin-left: 0;
+    width: 276px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.simple_block {
+    display: inline-block;
+    margin-left:90px;
+}
+
+.gallery_heading {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.image_bottom_button {
+    margin: auto;
+    text-align: center;
 }
