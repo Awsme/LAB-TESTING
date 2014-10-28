@@ -216,6 +216,7 @@ body {
             display: inline-block;
             margin-top: 2px;
         }
+
         .right_click {
             background: url(../img/right_arrow.png) no-repeat;
             cursor: pointer;
