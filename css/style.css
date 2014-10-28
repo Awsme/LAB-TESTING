@@ -1,11 +1,30 @@
+@font-face {
+  font-family: "Academy";
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/academyc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/academyc-webfont.woff") format("woff"), url("../fonts/academyc-webfont.ttf") format("truetype");
+}
+
 body {
 	background-color: #f7f6ec;
-	font-family: 'AcademyC', serif;
+	font-family: 'Academy', serif;
 	min-width: 320px;
 }
 
 h1 {
 	color: #b39c5a;
+}
+
+p {
+	margin: 1em 0px;
+}
+
+h3 {
+	padding: 0px;
+	margin: 0px;
+	line-height: 1em;
+	font-weight: normal;
+	font-style: normal;
 }
 
 #container {
@@ -109,4 +128,56 @@ header {
 .date_month {
 	font-size: 13px;
 	font-family: Arial, sans-serif;
+}
+
+.nearest_event {
+	margin-top: 70px;
+	width: 80px;
+	margin-left: 142px;
+	padding: 7px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-style: italic;
+}
+
+.banner_heading {
+	width: 130px;
+	font-size: 20px;
+	padding-top: 5px;
+	line-height: 24px;
+	clear: both;
+}
+
+.banner_heading a {
+	color: #2f2f2f;
+	text-decoration: none;
+	border-bottom: solid 1px #b39c5a;
+}
+
+.banner_text {
+	width: 275px;
+	padding-top: 5px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	color: #4f4f4f;
+	line-height: 18px;
+	clear: both;
+}
+
+.biography {
+	position: absolute;
+	right: 66px;
+	top: 395px;
+}
+
+.bio_heading {
+	color: #B39C5A;
+	font-size: 35px;
+}
+
+.bio_text {
+	width: 280px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px
 }
