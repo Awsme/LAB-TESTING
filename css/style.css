@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "Academy";
-  font-style: normal;
-  font-weight: bold;
-  src: url("fonts/academyc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/academyc-webfont.woff") format("woff"), url("../fonts/academyc-webfont.ttf") format("truetype");
-}
-
 body {
 	background-color: #f7f6ec;
 	font-family: 'Academy', serif;
@@ -27,10 +20,10 @@ h3 {
 	font-style: normal;
 }
 
-#container {
+#wrapper {
 	box-sizing: border-box;
 	max-width: 1440px;
-	width: 90%;
+	width: 1200px;
 	margin: 38px auto 50px auto;
 	outline: 2px solid black;
 	border: 8px solid #f7f6ec;
@@ -49,6 +42,11 @@ h3 {
 	font-style: italic;
 }
 
+.language:hover{
+    border: 2px solid #d6bb36;
+    box-shadow: 0px 0px 22px 0px rgba(230, 209, 89, 0.91);
+}
+
 .email {
 	float: right;
 	margin-right: 0px;
@@ -57,6 +55,10 @@ h3 {
 	text-decoration: none;
 	border-bottom: solid 1px #b39c5a;
 	font-style: italic;
+}
+
+.email:hover {
+    cursor: pointer;
 }
 
 #fixed_topside {
@@ -103,6 +105,11 @@ header {
 	font-size: 15px;
 	background: #f2e9e2;
 	margin-top: 1px;
+}
+
+.navigation a:hover{
+    color: white;
+    background: black;
 }
 
 .left_banner {
