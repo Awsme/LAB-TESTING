@@ -2,7 +2,7 @@
   font-family: "Academy";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/academyc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/academyc-webfont.woff") format("woff"), url("../fonts/academyc-webfont.ttf") format("truetype");
+  src: url("../fonts/academyc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/academyc-webfont.woff") format("woff");
 }
 
 body {
