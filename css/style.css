@@ -5,6 +5,11 @@
   src: url("../fonts/academyc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/academyc-webfont.woff") format("woff");
 }
 
+h1 h2 h3 h4 h5 h6 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	background-color: #f7f6ec;
 	font-family: 'Academy', serif;
@@ -12,7 +17,6 @@ body {
 }
     #wrapper {
         box-sizing: border-box;
-        max-width: 1440px;
         width: 1200px;
         margin: 38px auto 50px auto;
         outline: 2px solid black;
@@ -20,7 +24,6 @@ body {
         box-shadow: inset 0 0 0 1px #b39c5a;
         padding: 15px 50px 30px 50px;
         position: relative;
-        z-index: 1;
     }
         .language {
             margin-left: 0;
@@ -32,6 +35,7 @@ body {
         }
         .language:hover{
             background: black;
+            color: white;
         }
         .email {
             float: right;
@@ -42,7 +46,6 @@ body {
             border-bottom: solid 1px #b39c5a;
             font-style: italic;
         }
-
         .email:hover {
             background: black;
             color: white;
@@ -140,11 +143,12 @@ body {
         }
         .biography {
             position: absolute;
-            right: 66px;
-            top: 395px;
+            right: 74px;
+            top: 410px;
         }
         .bio_heading {
             color: #B39C5A;
+            margin: auto;
             font-size: 35px;
         }
 
@@ -159,7 +163,7 @@ body {
         margin-top: 100px;
     }
         .arc_title {
-            margin-top: 0;
+            margin: 0;
             font-size: 35px;
             width: 100%;
             text-align: center;
@@ -172,55 +176,159 @@ body {
             text-align: center;
             font-size: 15px;
             font-style: italic;
-            margin-bottom: 35px;
-            margin-top: 15px;
+            margin: 15px auto 35px auto;
         }
-        .gallery {
-            width: 1020px;
-            heighT: 260px;
-            margin: 0 auto;
+            .gallery {
+                width: 1020px;
+                heighT: 260px;
+                margin: 0 auto;
+            }
+                .apa_block {
+                    margin-left: 0;
+                    width: 276px;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                    .apa_block img {
+                        outline: 1px solid #b39c5a;
+                    }
+                    .gallery_heading {
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+                    .gallery_heading a {
+                        text-decoration: none;
+                        border-bottom: 1px solid #b39c5a;
+                        color: black;
+                    }
+                    .image_bottom_button {
+                        margin: auto;
+                        text-align: center;
+                    }
+                        .left_click {
+                            background: url(../img/left_arrow.png) no-repeat;
+                            cursor: pointer;
+                            width: 9px;
+                            height: 15px;
+                            display: inline-block;
+                            margin-top: 2px;
+                        }
+                        .counter {
+                            display: inline-block;
+                            font-size: 21px;
+                            margin: 0 55px 0 55px;
+                        }
+                        .right_click {
+                            background: url(../img/right_arrow.png) no-repeat;
+                            cursor: pointer;
+                            width: 9px;
+                            height: 15px;
+                            display: inline-block;
+                            margin-top: 2px;
+                        }
+                .simple_block {
+                    display: inline-block;
+                    margin-left:90px;
+                }
+                .simple_block img {
+                    outline: 1px solid #b39c5a;
+                }
+            .exhibition {
+                margin: auto;
+                margin-top: 85px;
+                width: 720px;
+            }
+                .exhibition_title{
+                    font-size: 60px;
+                    line-height: 86px;
+                    text-transform: uppercase;
+                    margin: 0 auto;
+                }
+                .exhibition_title a {
+                    text-decoration: none;
+                    color: black;
+                    border-bottom: 1px solid #b39c5a;
+                }
+                .exhibition_description {
+                    width: 347px;
+                    font-family: Arial, sans-serif;
+                    font-size: 12px;
+                    line-height: 16px;
+                    position: absolute;
+                    margin-top: -55px;
+                    margin-left: 350px;
+                }
+                .nana_logo {
+                    display: block;
+                    margin: 25px auto;
+                }
+        .media_projects {
+            margin-top: 100px;
         }
-        .apa_block {
-            margin-left: 0;
-            width: 276px;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .simple_block {
-            display: inline-block;
-            margin-left:90px;
-        }
-        .gallery_heading {
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        .gallery_heading a {
-            text-decoration: none;
-            border-bottom: 1px solid #b39c5a;
-            color: black;
-        }
-        .image_bottom_button {
-            margin: auto;
-            text-align: center;
-        }
-        .counter {
-            display: inline-block;
-            font-size: 21px;
-            margin: 0 55px 0 55px;
-        }
-        .left_click {
-            background: url(../img/left_arrow.png) no-repeat;
-            cursor: pointer;
-            width: 9px;
-            height: 15px;
-            display: inline-block;
-            margin-top: 2px;
-        }
-        .right_click {
-            background: url(../img/right_arrow.png) no-repeat;
-            cursor: pointer;
-            width: 9px;
-            height: 15px;
-            display: inline-block;
-            margin-top: 2px;
-        }
+            .media_project_title {
+                margin: 0;
+                font-size: 35px;
+                width: 100%;
+                text-align: center;
+                background-image: url(../img/architect_lines1.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                text-transform: uppercase;
+            }
+            .media_project_description {
+                margin: 5px auto;
+                font-size: 15px;
+                font-style: italic;
+                text-align: center;
+            }
+            .films {
+                width: 100%;
+                margin: 0 auto;
+                font-size: 15px;
+                display: inline-block;
+            }
+                .documental_film {
+                    margin: 0;
+                    float: left;
+                    width: 700px;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                    .documental_film img{
+                        outline: 1px solid #b39c5a;
+                    }
+                    .documental_film_title {
+                        text-align: center;
+                        margin: 50px 0 35px 0;
+                        text-transform: uppercase;
+                        }
+                        .documental_film_block {
+                            display: inline-block;
+                            margin: 0 75px 0 0;
+                            width: 180px;
+                            vertical-align: top;
+                        }
+                            .doc_film_title {
+                                margin: 0;
+                            }
+                            .doc_film_title a{
+                                border-bottom: 1px solid #b39c5a;
+                                text-decoration: none;
+                                color: #2f2f2f;
+                                line-height: 22px;
+                                font-size: 20px;
+                                font-weight: normal;
+                            }
+                            .doc_film_description {
+                                font-size: 12px;
+                                font-family: Arial, sans-serif;
+                                line-height: 18px;
+                            }
+                            .documental_film_block:last-child {
+                                margin-right: 0;
+                            }
+                    .game_film {
+                        display: inline-block;
+                        margin-left: 95px;
+                        vertical-align: top;
+                    }
