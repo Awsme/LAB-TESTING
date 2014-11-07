@@ -16,12 +16,12 @@ body {
 }
     #wrapper {
         box-sizing: border-box;
-        width: 1200px;
+        width: 1196px;
         margin: 38px auto 38px auto;
         outline: 2px solid black;
         border: 8px solid #f7f6ec;
         box-shadow: inset 0 0 0 1px #b39c5a;
-        padding: 11px 19px 0 14px;
+        padding: 10px 15px 0 13px;
         position: relative;
         vertical-align: top;
     }
@@ -117,6 +117,9 @@ body {
         .nana_block {
             width: 410px;
             height: 515px;
+            top: 7px;
+            left: 11px;
+            position: relative;
             margin: 0 auto;
         }
         .nana_photo {
@@ -127,15 +130,15 @@ body {
         }
         .navigation {
             list-style-type: none;
-            width: 235px;
+            width: 228px;
             position: absolute;
-            top: 170px;
-            right: 45px;
+            top: 123px;
+            right: 42px;
             margin-left: 115px;
         }
         .navigation a{
             float: right;
-            padding: 6px;
+            padding: 3px;
             margin-right: 20px;
             text-decoration: none;
             color: #252525;
@@ -144,30 +147,37 @@ body {
             background: #f2e9e2;
             margin-top: 1px;
         }
+
         .navigation a:hover{
             color: white;
             background: black;
         }
         .biography {
             position: absolute;
-            right: 74px;
-            top: 410px;
+            right: 65px;
+            top: 397px;
         }
         .bio_heading {
             color: #B39C5A;
             margin: auto;
             font-size: 35px;
+            text-transform: uppercase;
         }
 
         .bio_text {
             width: 280px;
             font-family: Arial, sans-serif;
             font-size: 12px;
-            line-height: 20px
+            line-height: 20px;
+            position: relative;
+            top: 7px;
+            left: 5px;
         }
 
     .architecture_design{
-        margin-top: 100px;
+        margin-top: 108px;
+        position: relative;
+        right: -9px;
     }
         .arc_title {
             margin: 0;
@@ -183,12 +193,13 @@ body {
             text-align: center;
             font-size: 15px;
             font-style: italic;
-            margin: 15px auto 35px auto;
+            margin: 3px 18px 35px auto;
+            letter-spacing: 0.5px;
         }
             .gallery {
                 width: 1020px;
                 heighT: 260px;
-                margin: 0 auto;
+                margin: -27px 63px;
             }
                 .apa_block {
                     margin-left: 0;
@@ -201,6 +212,8 @@ body {
                     }
                     .gallery_heading {
                         text-align: center;
+                        position: relative;
+                        margin-left: -2px;
                         margin-bottom: 15px;
                     }
                     .gallery_heading a {
@@ -235,14 +248,13 @@ body {
                         }
                 .simple_block {
                     display: inline-block;
-                    margin-left:90px;
+                    margin-left: 88px;
                 }
                 .simple_block img {
                     outline: 1px solid #b39c5a;
                 }
             .exhibition {
-                margin: auto;
-                margin-top: 85px;
+                margin: 102px 225px 102px auto;
                 width: 720px;
             }
                 .exhibition_title{
