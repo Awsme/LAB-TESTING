@@ -17,7 +17,7 @@ body {
     #wrapper {
         box-sizing: border-box;
         width: 1196px;
-        margin: 38px auto 38px auto;
+        margin: 29px auto 38px auto;
         outline: 2px solid black;
         border: 8px solid #f7f6ec;
         box-shadow: inset 0 0 0 1px #b39c5a;
@@ -254,12 +254,11 @@ body {
                     outline: 1px solid #b39c5a;
                 }
             .exhibition {
-                margin: 102px 225px 102px auto;
-                width: 720px;
+                margin: 107px 225px 102px auto;
+                width: 722px;
             }
                 .exhibition_title{
                     font-size: 60px;
-                    line-height: 86px;
                     text-transform: uppercase;
                     margin: 0 auto;
                 }
@@ -274,15 +273,15 @@ body {
                     font-size: 12px;
                     line-height: 16px;
                     position: absolute;
-                    margin-top: -55px;
-                    margin-left: 350px;
+                    margin-top: -66px;
+                    margin-left: 354px;
                 }
                 .nana_logo {
                     display: block;
-                    margin: 25px auto;
+                    margin: 8px auto;
                 }
         .media_projects {
-            margin-top: 100px;
+            margin: -12px 0 0 23px;
         }
             .media_project_title {
                 margin: 0;
@@ -295,40 +294,44 @@ body {
                 text-transform: uppercase;
             }
             .media_project_description {
-                margin: 5px auto;
+                margin: 3px 0 0 -35px;
+                letter-spacing: 0.2px;
                 font-size: 15px;
                 font-style: italic;
                 text-align: center;
             }
             .films {
                 width: 100%;
-                margin: 0 auto;
+                margin: -6px auto;
                 font-size: 15px;
                 display: inline-block;
             }
                 .documental_film {
-                    margin: 0;
+                    margin: -6px 48px;
                     float: left;
                     width: 700px;
                     display: inline-block;
                     vertical-align: top;
+                    position: relative;
                 }
                     .documental_film img{
                         outline: 1px solid #b39c5a;
                     }
                     .documental_film_title {
                         text-align: center;
-                        margin: 50px 0 35px 0;
+                        margin: 53px 43px 31px 0;
                         text-transform: uppercase;
-                        }
+                        font-size: 19px;
+                    }
                         .documental_film_block {
                             display: inline-block;
-                            margin: 0 75px 0 0;
+                            margin: 0 69px 0 0;
                             width: 180px;
                             vertical-align: top;
                         }
                             .doc_film_title {
-                                margin: 0;
+                                margin-top: 3px;
+                                letter-spacing: 0.6px;
                             }
                             .doc_film_title a{
                                 border-bottom: 1px solid #b39c5a;
@@ -351,3 +354,25 @@ body {
                         margin-left: 95px;
                         vertical-align: top;
                     }
+                        .game_film_title {
+                            text-transform: uppercase;
+                            margin: 46px 0 0 -36px;
+                            font-size: 20px;
+                        }
+                        .game_film_block {
+                            outline: 1px solid black;
+                            width: 180px;
+                        }
+
+                        .game_film_block img {
+                            outline: 1px solid #b39c5a;
+                        }
+                            .game_film_name a{
+                                text-decoration: none;
+                                color: #2f2f2f;
+                                border-bottom: 1px solid #b39c5a;
+                            }
+                            .game_film_name_desc {
+                                font-family: Arial, sans-serif;
+                                color: #2f2f2f;
+                            }
