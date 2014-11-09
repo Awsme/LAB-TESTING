@@ -1,378 +1,598 @@
 @font-face {
-  font-family: "Academy";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/academyc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/academyc-webfont.woff") format("woff");
-}
-
-h1 h2 h3 h4 h5 h6 {
-    margin: 0;
-    padding: 0;
+    font-family: "Academy";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/academyc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/academyc-webfont.woff") format("woff");
 }
 
 body {
-	background-color: #f7f6ec;
-	font-family: 'Academy', serif;
+    background-color: #f7f6ec;
+    font-family: 'Academy', serif;
 }
-    #wrapper {
-        box-sizing: border-box;
-        width: 1196px;
-        margin: 29px auto 38px auto;
-        outline: 2px solid black;
-        border: 8px solid #f7f6ec;
-        box-shadow: inset 0 0 0 1px #b39c5a;
-        padding: 10px 15px 0 13px;
+#wrapper {
+    box-sizing: border-box;
+    width: 1196px;
+    margin: 27px auto 38px auto;
+    outline: 2px solid black;
+    border: 8px solid #f7f6ec;
+    box-shadow: inset 0 0 0 1px #b39c5a;
+    padding: 10px 15px 0 13px;
+    position: relative;
+    vertical-align: top;
+}
+.language {
+    font-size: 15px;
+    color: #4d4d4d;
+    text-decoration: none;
+    border-bottom: 1px solid #b39c5a;
+    font-style: italic;
+    margin: 1px 0 0 -2px;
+}
+.language:hover{
+    background: black;
+    color: white;
+}
+.email {
+    float: right;
+    font-size: 15px;
+    color: #4d4d4d;
+    text-decoration: none;
+    border-bottom: solid 1px #b39c5a;
+    font-style: italic;
+    margin: 1px 2px;
+}
+.email:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.left_banner {
+    position: absolute;
+    margin-left: 46px;
+    margin-top: 12px;
+    width: 265px;
+}
+.left_banner_logo {
+    float: left;
+}
+.left_banner_date {
+    margin-left: 15px;
+    float: left;
+    margin-bottom: -2px;
+    line-height: 28px;
+}
+.date_num {
+    font-size: 40px;
+    display: block;
+    letter-spacing: -3px;
+    margin: 1px 0px -1px -3px;
+}
+.date_month {
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+.nearest_event {
+    margin-top: 57px;
+    width: 80px;
+    margin-left: 143px;
+    padding: 7px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-style: italic;
+    line-height: 15px;
+}
+.banner_heading {
+    width: 130px;
+    font-size: 20px;
+    padding-top: 29px;
+    line-height: 22px;
+    margin-left: -2px;
+}
+.banner_text {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #4f4f4f;
+    line-height: 18px;
+    margin-top: -12px;
+    letter-spacing: -0.3px;
+}
+.banner_heading a {
+    color: #2f2f2f;
+    text-decoration: none;
+    border-bottom: solid 1px #b39c5a;
+}
+.heading_name {
+    font-size: 44px;
+    color: #b39c5a;
+    text-align: center;
+    margin: 5px -14px 22px 0px;
+    letter-spacing: 2px;
+}
+.nana_block {
+    width: 410px;
+    height: 515px;
+    top: 7px;
+    left: 12px;
+    position: relative;
+    margin: 0 auto;
+}
+.nana_photo {
+    display: block;
+    margin: auto;
+    border: 7px solid #fff;
+    outline: 5px solid #b39c5a;
+}
+.navigation {
+    list-style-type: none;
+    width: 228px;
+    position: absolute;
+    top: 123px;
+    right: 42px;
+    margin: 2px -5px 0 115px;
+    letter-spacing: -0.1px;
+}
+.navigation a{
+    float: right;
+    padding: 3px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: #f2e9e2;
+    margin-top: 1px;
+}
+
+.navigation a:hover{
+    color: white;
+    background: black;
+}
+.biography {
+    position: absolute;
+    right: 65px;
+    top: 397px;
+}
+.bio_heading {
+    color: #B39C5A;
+    margin: auto;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.bio_text {
+    width: 280px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    position: relative;
+    top: 7px;
+    left: 5px;
+}
+
+.architecture_design{
+    margin-top: 108px;
+    position: relative;
+    right: -10px;
+    top: -1px;
+}
+.arc_title {
+    margin: 0;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/architect_lines.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+}
+.arc_title_description {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    margin: 3px 18px 35px auto;
+    letter-spacing: 0.5px;
+}
+.gallery {
+    width: 1020px;
+    heighT: 260px;
+    margin: -27px 63px;
+}
+.apa_block {
+    margin-left: 0;
+    width: 276px;
+    display: inline-block;
+    vertical-align: top;
+}
+.apa_block img {
+    outline: 1px solid #b39c5a;
+}
+.gallery_heading {
+    text-align: center;
+    position: relative;
+    margin-left: -2px;
+    margin-bottom: 15px;
+}
+.gallery_heading a {
+    text-decoration: none;
+    border-bottom: 1px solid #b39c5a;
+    color: black;
+}
+.image_bottom_button {
+    margin: auto;
+    text-align: center;
+}
+.left_click {
+    background: url(../img/left_arrow.png) no-repeat;
+    cursor: pointer;
+    width: 9px;
+    height: 15px;
+    display: inline-block;
+    margin-top: 2px;
+}
+.counter {
+    display: inline-block;
+    font-size: 21px;
+    margin: 0 55px 0 55px;
+}
+.right_click {
+    background: url(../img/right_arrow.png) no-repeat;
+    cursor: pointer;
+    width: 9px;
+    height: 15px;
+    display: inline-block;
+    margin-top: 2px;
+}
+.simple_block {
+    display: inline-block;
+    margin-left: 88px;
+}
+.simple_block img {
+    outline: 1px solid #b39c5a;
+}
+.exhibition {
+    margin: 107px 225px 102px auto;
+    width: 722px;
+}
+.exhibition_title{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.exhibition_title a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #b39c5a;
+}
+.exhibition_description {
+    width: 347px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    margin-top: -66px;
+    margin-left: 354px;
+}
+.nana_logo {
+    display: block;
+    margin: 8px auto;
+}
+.media_projects {
+    margin: -12px 0 0 23px;
+}
+.media_project_title {
+    margin: 0;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/architect_lines1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+}
+.media_project_description {
+    margin: 3px 0 0 -35px;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+.films {
+    width: 100%;
+    margin: -6px auto;
+    font-size: 15px;
+    display: inline-block;
+}
+.documental_film {
+    margin: -6px 48px;
+    float: left;
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.documental_film img{
+    outline: 1px solid #b39c5a;
+}
+.documental_film_title {
+    text-align: center;
+    margin: 53px 43px 31px 0;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+.documental_film_block {
+    display: inline-block;
+    margin: 0 69px 0 0;
+    width: 180px;
+    vertical-align: top;
+}
+.doc_film_title {
+    margin-top: 3px;
+    letter-spacing: 0.6px;
+}
+.doc_film_title a{
+    border-bottom: 1px solid #b39c5a;
+    text-decoration: none;
+    color: #2f2f2f;
+    line-height: 22px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.doc_film_description {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    line-height: 18px;
+}
+.documental_film_block:last-child {
+    margin-right: 0;
+}
+.game_film {
+    display: inline-block;
+    margin: 26px 59px;
+    vertical-align: top;
+}
+.game_film_title {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.game_film_block {
+    outline: 1px solid black;
+    width: 181px;
+    height: 267px;
+    margin: -4px -28px;
+    padding: 20px;
+}
+
+.game_film_block img {
+    outline: 1px solid #b39c5a;
+}
+
+.game_film_name {
+    margin-top: 9px;
+    font-size: 20px;
+    margin-left: -2px;
+}
+.game_film_name a{
+    text-decoration: none;
+    color: #2f2f2f;
+    border-bottom: 1px solid #b39c5a;
+}
+.game_film_name_desc {
+    font-family: Arial, sans-serif;
+    color: #2f2f2f;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: -7px;
+    margin-left: -2px;
+}
+
+    .book_album {
         position: relative;
-        vertical-align: top;
-    }
-        .language {
-            font-size: 15px;
-            color: #4d4d4d;
-            text-decoration: none;
-            border-bottom: solid 1px #b39c5a;
-            font-style: italic;
-        }
-        .language:hover{
-            background: black;
-            color: white;
-        }
-        .email {
-            float: right;
-            font-size: 15px;
-            color: #4d4d4d;
-            text-decoration: none;
-            border-bottom: solid 1px #b39c5a;
-            font-style: italic;
-        }
-        .email:hover {
-            background: black;
-            color: white;
-            cursor: pointer;
-        }
-    header {
-        width: 100%;
-        margin: 0 auto;
+        width: 795px;
+        height: 360px;
+        margin: 56px auto;
     }
 
-        .left_banner {
-            position: absolute;
-            margin-left: 44px;
-            margin-top: 11px;
-            width: 265px;
+        .book_album_title {
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 13px 3px 0;
+            font-size: 19px;
+            letter-spacing: 0.3px;
         }
-            .left_banner_logo {
-                float: left;
+        .secrets_world_arc {
+            position: relative;
+            width: 360px;
+            float: left;
+        }
+            .secrets_world_arc img {
+                margin: 29px 0 0 -10px;
             }
-            .left_banner_date {
-                margin-left: 15px;
-                float: left;
-                margin-bottom: -2px;
-                line-height: 28px;
-            }
-                .date_num {
-                    font-size: 40px;
-                    display: block;
-                    letter-spacing: -3px;
-                }
-                .date_month {
-                    font-size: 13px;
-                    font-family: Arial, sans-serif;
-                }
-            .nearest_event {
-                margin-top: 57px;
-                width: 80px;
-                margin-left: 146px;
-                padding: 7px 0;
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
-                font-style: italic;
-                line-height: 15px;
-            }
-            .banner_heading {
-                width: 130px;
+            .secrets_world_arc_title {
+                position: absolute;
+                top: 24px;
+                right: 36px;
                 font-size: 20px;
-                padding-top: 29px;
-                line-height: 22px;
-                margin-left: -2px;
+                font-family: Times New Roman,sans-serif;
+                font-weight: normal;
             }
-            .banner_text {
-                font-size: 12px;
-                font-family: Arial, sans-serif;
-                color: #4f4f4f;
-                line-height: 18px;
-                margin-top: -12px;
-            }
-            .banner_heading a {
+            .secrets_world_arc_title a{
                 color: #2f2f2f;
                 text-decoration: none;
-                border-bottom: solid 1px #b39c5a;
+                border-bottom: 1px solid #b39c5a;
             }
-            .heading_name {
-                font-size: 44px;
-                color: #b39c5a;
-                text-align: center;
-                margin: 3px -13px 24px 0;
-                letter-spacing: 2px;
+            .secrets_wolrd_arc_desc1 {
+                position: absolute;
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+                top: 84px;
+                left: 188px;
+                line-height: 18px;
             }
-        .nana_block {
-            width: 410px;
-            height: 515px;
-            top: 7px;
-            left: 11px;
+            .secrets_wolrd_arc_desc2 {
+                position: absolute;
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+                top: 166px;
+                left: 34px;
+                letter-spacing: -0.2px;
+                line-height: 18px;
+            }
+        .philosophy_design{
             position: relative;
-            margin: 0 auto;
+            width: 399px;
+            float: left;
         }
-        .nana_photo {
-            display: block;
-            margin: auto;
-            border: 7px solid #fff;
-            outline: 5px solid #b39c5a;
-        }
-        .navigation {
-            list-style-type: none;
-            width: 228px;
-            position: absolute;
-            top: 123px;
-            right: 42px;
-            margin-left: 115px;
-        }
-        .navigation a{
-            float: right;
-            padding: 3px;
-            margin-right: 20px;
-            text-decoration: none;
-            color: #252525;
-            text-transform: uppercase;
-            font-size: 15px;
-            background: #f2e9e2;
-            margin-top: 1px;
-        }
+            .philosophy_design img {
+                margin-left: 69px;
+                margin-top: 24px;
+            }
+            .philosophy_design_title {
+                position: absolute;
+                top: 24px;
+                right: 79px;
+                font-size: 20px;
+                font-family: Times New Roman,sans-serif;
+                font-weight: normal;
+            }
+            .philosophy_design_title a{
+                color: #2f2f2f;
+                text-decoration: none;
+                border-bottom: 1px solid #b39c5a;
+            }
+            .philosophy_design_desc1 {
+                position: absolute;
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+                top: 84px;
+                left: 224px;
+                line-height: 18px;
+            }
+            .philosophy_design_desc2 {
+                position: absolute;
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+                top: 200px;
+                left: 114px;
+                line-height: 18px;
+            }
 
-        .navigation a:hover{
-            color: white;
-            background: black;
-        }
-        .biography {
-            position: absolute;
-            right: 65px;
-            top: 397px;
-        }
-        .bio_heading {
-            color: #B39C5A;
-            margin: auto;
-            font-size: 35px;
-            text-transform: uppercase;
-        }
+#partners {
+    margin-top: -58px;
+    margin-left: -14px;
+}
 
-        .bio_text {
-            width: 280px;
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            line-height: 20px;
-            position: relative;
-            top: 7px;
-            left: 5px;
-        }
+.section_heading {
+    background-image: url(../img/architect_lines.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    margin: 0px 0 53px -1px;
+}
+.partners_description{
+    font-size: 15px;
+    line-height: 20px;
+    font-style: italic;
+    width: 685px;
+    text-align: center;
+    margin: -50px auto 0 auto;
+}
+.partners_list{
+    width: 1008px;
+    margin: 0 0 0 47px;
+    text-align: center;
+}
+.partner{
+    display: inline-block;
+    vertical-align: middle;
+    width: 199px;
+    margin: 14px 77px 0 44px;
+}
 
-    .architecture_design{
-        margin-top: 108px;
-        position: relative;
-        right: -9px;
-    }
-        .arc_title {
-            margin: 0;
-            font-size: 35px;
-            width: 100%;
-            text-align: center;
-            background-image: url(../img/architect_lines.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            text-transform: uppercase;
-        }
-        .arc_title_description {
-            text-align: center;
-            font-size: 15px;
-            font-style: italic;
-            margin: 3px 18px 35px auto;
-            letter-spacing: 0.5px;
-        }
-            .gallery {
-                width: 1020px;
-                heighT: 260px;
-                margin: -27px 63px;
-            }
-                .apa_block {
-                    margin-left: 0;
-                    width: 276px;
-                    display: inline-block;
-                    vertical-align: top;
-                }
-                    .apa_block img {
-                        outline: 1px solid #b39c5a;
-                    }
-                    .gallery_heading {
-                        text-align: center;
-                        position: relative;
-                        margin-left: -2px;
-                        margin-bottom: 15px;
-                    }
-                    .gallery_heading a {
-                        text-decoration: none;
-                        border-bottom: 1px solid #b39c5a;
-                        color: black;
-                    }
-                    .image_bottom_button {
-                        margin: auto;
-                        text-align: center;
-                    }
-                        .left_click {
-                            background: url(../img/left_arrow.png) no-repeat;
-                            cursor: pointer;
-                            width: 9px;
-                            height: 15px;
-                            display: inline-block;
-                            margin-top: 2px;
-                        }
-                        .counter {
-                            display: inline-block;
-                            font-size: 21px;
-                            margin: 0 55px 0 55px;
-                        }
-                        .right_click {
-                            background: url(../img/right_arrow.png) no-repeat;
-                            cursor: pointer;
-                            width: 9px;
-                            height: 15px;
-                            display: inline-block;
-                            margin-top: 2px;
-                        }
-                .simple_block {
-                    display: inline-block;
-                    margin-left: 88px;
-                }
-                .simple_block img {
-                    outline: 1px solid #b39c5a;
-                }
-            .exhibition {
-                margin: 107px 225px 102px auto;
-                width: 722px;
-            }
-                .exhibition_title{
-                    font-size: 60px;
-                    text-transform: uppercase;
-                    margin: 0 auto;
-                }
-                .exhibition_title a {
-                    text-decoration: none;
-                    color: black;
-                    border-bottom: 1px solid #b39c5a;
-                }
-                .exhibition_description {
-                    width: 347px;
-                    font-family: Arial, sans-serif;
-                    font-size: 12px;
-                    line-height: 16px;
-                    position: absolute;
-                    margin-top: -66px;
-                    margin-left: 354px;
-                }
-                .nana_logo {
-                    display: block;
-                    margin: 8px auto;
-                }
-        .media_projects {
-            margin: -12px 0 0 23px;
-        }
-            .media_project_title {
-                margin: 0;
-                font-size: 35px;
-                width: 100%;
-                text-align: center;
-                background-image: url(../img/architect_lines1.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                text-transform: uppercase;
-            }
-            .media_project_description {
-                margin: 3px 0 0 -35px;
-                letter-spacing: 0.2px;
-                font-size: 15px;
-                font-style: italic;
-                text-align: center;
-            }
-            .films {
-                width: 100%;
-                margin: -6px auto;
-                font-size: 15px;
-                display: inline-block;
-            }
-                .documental_film {
-                    margin: -6px 48px;
-                    float: left;
-                    width: 700px;
-                    display: inline-block;
-                    vertical-align: top;
-                    position: relative;
-                }
-                    .documental_film img{
-                        outline: 1px solid #b39c5a;
-                    }
-                    .documental_film_title {
-                        text-align: center;
-                        margin: 53px 43px 31px 0;
-                        text-transform: uppercase;
-                        font-size: 19px;
-                    }
-                        .documental_film_block {
-                            display: inline-block;
-                            margin: 0 69px 0 0;
-                            width: 180px;
-                            vertical-align: top;
-                        }
-                            .doc_film_title {
-                                margin-top: 3px;
-                                letter-spacing: 0.6px;
-                            }
-                            .doc_film_title a{
-                                border-bottom: 1px solid #b39c5a;
-                                text-decoration: none;
-                                color: #2f2f2f;
-                                line-height: 22px;
-                                font-size: 20px;
-                                font-weight: normal;
-                            }
-                            .doc_film_description {
-                                font-size: 12px;
-                                font-family: Arial, sans-serif;
-                                line-height: 18px;
-                            }
-                            .documental_film_block:last-child {
-                                margin-right: 0;
-                            }
-                    .game_film {
-                        display: inline-block;
-                        margin-left: 95px;
-                        vertical-align: top;
-                    }
-                        .game_film_title {
-                            text-transform: uppercase;
-                            margin: 46px 0 0 -36px;
-                            font-size: 20px;
-                        }
-                        .game_film_block {
-                            outline: 1px solid black;
-                            width: 180px;
-                        }
+#contacts{
+    margin-top: 126px;
+}
+.contact_spots {
+    width: 728px;
+    margin: -23px auto 49px auto;
+    height: 150px;
+    /* margin-top: 12px; */
+    text-align: center;
+}
+.moscow{
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+.bremen{
+    width: 220px;
+    height: 150px;
+    position: static;
+    float: right;
+}
+.city_heading{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.adress,
+.phone,
+.fax{
+    font-size: 12px;
+    display: block;
+    margin-top: 16px;
+}
 
-                        .game_film_block img {
-                            outline: 1px solid #b39c5a;
-                        }
-                            .game_film_name a{
-                                text-decoration: none;
-                                color: #2f2f2f;
-                                border-bottom: 1px solid #b39c5a;
-                            }
-                            .game_film_name_desc {
-                                font-family: Arial, sans-serif;
-                                color: #2f2f2f;
-                            }
+.backToTopl {
+    position: absolute;
+    text-decoration: none;
+    color: #b39c5a;
+    border: 1px solid #f2e9e2;
+    font-size: 20px;
+    bottom: 14px;
+}
+
+.backToTopr {
+    position: absolute;
+    text-decoration: none;
+    color: #b39c5a;
+    border: 1px solid #f2e9e2;
+    font-size: 20px;
+    bottom: 14px;
+    right:14px;
+}
+
+.backToTopl:hover{
+    background-color: #2f2f2f;
+    color: #f2e9e2;
+}
+
+.backToTopr:hover{
+    background-color: #2f2f2f;
+    color: #f2e9e2;
+}
+
+a#up {
+    display: none;
+    position: fixed;
+    margin-left: 2px; /* своё значение */
+    margin-left: calc(-100% - 2px); /* вместо 7em своё значение */
+    padding: 100% 1% 0 99%;
+    bottom: 0;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #bbb;
+    transition: 1s;
+}
+a#up:before {
+    position: absolute;
+    content: url(http://d-ma.name/wp-content/uploads/2012/08/2uparrow.png);
+    margin: -55px 0 0 -12px;
+}
+a#up:hover {color: #000; background-color: rgba(0,0,0,.3);}
